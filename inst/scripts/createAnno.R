@@ -11,7 +11,7 @@ manifestList <- maniTmp$manifestList
 
 ## Checking
 library(illuminaio)
-epic <- readIDAT("../../../Illumina_EPIC/data_files/Demo_Data_EPIC/200144450018/200144450018_R04C01_Grn.idat")
+epic <- readIDAT("../../../IlluminaHumanMethylationEPIC_files/data/Demo_Data_EPIC/200144450018/200144450018_R04C01_Grn.idat")
 address.epic <- as.character(epic$MidBlock)
 dropCpGs <- anno$Name[anno$AddressB != "" & !anno$AddressB %in% address.epic]
 dropCpGs <- anno$Name[anno$AddressA != "" & !anno$AddressA %in% address.epic]
